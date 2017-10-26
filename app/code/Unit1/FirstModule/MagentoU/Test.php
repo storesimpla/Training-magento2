@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace Unit1\FirstModule\MagentoU;
 
@@ -11,8 +11,6 @@ class Test
         \Unit1\FirstModule\Api\ProductRepositoryInterface $unit1ProductRepository,
         $justAParameter = false,
         array $data
-        ) 
-    {
-        
+    ) {
     }
 }

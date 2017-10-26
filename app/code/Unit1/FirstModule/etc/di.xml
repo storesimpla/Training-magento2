@@ -9,4 +9,13 @@ xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xs
 			</argument>
 		</arguments>
 	</type>
+	<type name="Magento\Catalog\Model\Product">
+        <plugin name="unit1_firstmodule_price" type="Unit1\FirstModule\Model\Plugin\ChangePrice" />
+    </type>
+    <type name="Magento\Theme\Block\Html\Footer">
+        <plugin name="unit1_firstmodule_copyright" type="Unit1\FirstModule\Model\Plugin\ChangeCopyright" />
+    </type>
+    <type name="Magento\Theme\Block\Html\Breadcrumbs">
+        <plugin name="unit1_firstmodule_breadcrumbs" type="Unit1\FirstModule\Model\Plugin\ChangeBreadcrumbs" />
+    </type>
 </config>

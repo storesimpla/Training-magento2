@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="cms_page_save_before">
+        <observer name="unit1_firstmodule" instance="Unit1\FirstModule\Observer\BeforePageSave" />
+    </event>
+    <event name="controller_action_predispatch">
+		<observer name="unit1_redirect" instance="Unit1\FirstModule\Observer\RedirrectToProductView" shared="false" disabled="true" />
+	</event>
+</config>

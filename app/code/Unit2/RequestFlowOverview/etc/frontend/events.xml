@@ -1,0 +1,5 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+	<event name="controller_front_send_response_before">
+		<observer name="request_flow_overview" instance="Unit2\RequestFlowOverview\Observer\LogPageOutput" shared="false"/>
+	</event>
+</config>
