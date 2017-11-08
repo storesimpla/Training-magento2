@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+		<referenceBlock name="product.info">
+	    	<block class="Magento\Framework\View\Element\Template" name="eight_module_content2" template="Unit3_EightModule::show_full_name.phtml" />
+	    </referenceBlock>
+	    <referenceBlock name="product.price.final">	
+	    	<block class="Magento\Framework\View\Element\Template" name="eight.module.final.price" template="Unit3_EightModule::show_full_name.phtml" />
+	    </referenceBlock>
+	    <referenceBlock name="product.price.final">	
+	    	<arguments>
+		   		<argument name="background_color" xsi:type="string">orange</argument>
+		   	</arguments>
+	    </referenceBlock>
+	    <referenceBlock name="product.price.final">	
+	    	<block class="Magento\Framework\View\Element\Template" name="eight.module.final.price" template="Unit3_EightModule::show_full_name.phtml" />
+	    </referenceBlock>
+	    <referenceBlock name="product.info.description" template="Unit3_EightModule::show_full_name2.phtml"/>
+	    <move element="product.price.final" destination="after.body.start" />
+	</body>
+</page>

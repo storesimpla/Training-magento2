@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content.top">
+            <block class="Magento\Framework\View\Element\Template" name="eight_module_content" template="Unit3_EightModule::show_full_name.phtml" />
+        </referenceContainer>
+        <referenceBlock name="page.main.title">
+	        <arguments>
+	      		<argument name="background_color" xsi:type="string">lightskyblue</argument>
+	      	</arguments>
+        </referenceBlock>
+        <referenceBlock name="content.top">
+            <block class="Magento\Framework\View\Element\Template" name="eightmodule.link.top" template="Unit3_EightModule::link.phtml">
+                <arguments>
+                    <argument name="links" xsi:type="array">
+                    	<item name="href" xsi:type="url" path="eightmodule/layout/onepage"/>
+                    	<item name="name" xsi:type="string">Link</item>
+                    </argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+        <referenceBlock name="eightmodule.link.top" remove="true"/>
+        <move element="page.main.title" destination="after.body.start" />
+    </body>
+</page>
